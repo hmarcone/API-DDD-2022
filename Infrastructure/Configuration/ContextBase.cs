@@ -34,6 +34,7 @@ public class ContextBase : IdentityDbContext<ApplicationUser>
     public string ObterStringConexao()
     {
         //ToDo: verificar depois o banco
-        return "Data Source=localhost\\SQLEXPRESS;Initial Catalog=API_DDD_2022;Integrated Security=False;User ID=sa;Password=1234;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
+        return "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Api_DDD_2022_Net6;Integrated Security=True";
+        //return "Data Source=localhost\\SQLEXPRESS;Initial Catalog=API_DDD_2022;Integrated Security=False;User ID=sa;Password=1234;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
     }
 }
