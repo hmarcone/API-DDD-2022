@@ -87,7 +87,6 @@ public class UsersController : ControllerBase
             return Ok(resultado.Errors);
         }
 
-
         // Geração de Confirmação caso precise
         var userId = await _userManager.GetUserIdAsync(user);
         var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -103,6 +102,4 @@ public class UsersController : ControllerBase
             return Ok("Erro ao confirmar usuários");
 
     }
-
-
 }
