@@ -72,7 +72,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
       });
 
 
-var config = new MapperConfiguration(cfg =>
+var config = new AutoMapper.MapperConfiguration(cfg =>
 {
     cfg.CreateMap<MessageViewModel, Message>();
     cfg.CreateMap<Message, MessageViewModel>();
